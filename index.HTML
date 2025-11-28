@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Окошки для Ссылок и Результаты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Мои Ссылки и Журнал Действий</h1>
+    </header>
+
+    <main>
+        <section class="link-section">
+            <h2>Нажмите на ссылку, чтобы зафиксировать действие</h2>
+            <div id="link-container" class="link-grid">
+                <div class="link-box">
+                    <a href="#" data-link-name="Ссылка 1 (Google)" data-link-url="https://www.google.com" target="_blank">
+                        <span class="link-title">Google Поиск</span>
+                        <span class="link-description">Самая популярная поисковая система.</span>
+                    </a>
+                </div>
+                <div class="link-box">
+                    <a href="#" data-link-name="Ссылка 2 (Yandex)" data-link-url="https://www.yandex.ru" target="_blank">
+                        <span class="link-title">Яндекс Поиск</span>
+                        <span class="link-description">Поисковик из России.</span>
+                    </a>
+                </div>
+                <div class="link-box">
+                    <a href="#" data-link-name="Ссылка 3 (Wikipedia)" data-link-url="https://ru.wikipedia.org" target="_blank">
+                        <span class="link-title">Википедия</span>
+                        <span class="link-description">Свободная энциклопедия.</span>
+                    </a>
+                </div>
+                <div class="link-box">
+                    <a href="#" data-link-name="Ссылка 4 (GitHub)" data-link-url="https://github.com" target="_blank">
+                        <span class="link-title">GitHub</span>
+                        <span class="link-description">Платформа для разработчиков.</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <h2>Таблица Результатов</h2>
+            <button id="clear-results-btn">Очистить результаты</button>
+            <div class="table-container">
+                <table id="results-table">
+                    <thead>
+                        <tr>
+                            <th>Название Ссылки</th>
+                            <th>Время Нажатия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-body">
+                        <!-- Сюда будут добавляться результаты JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Мой Сайт с Ссылками</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
